@@ -1,0 +1,63 @@
+@import "./colors.scss";
+
+.container {
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+  background-color: $content-background;
+  width: 100%;
+  height: max;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-top: 50px;
+  padding: 0 10px;
+  height: 50px;
+  width: 250px;
+  background-color: $input-background;
+  border-radius: 5px;
+  border: solid 1px #cecece;
+  transition: 0.2s ease-in-out;
+
+  &:focus {
+    opacity: 0.75;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.checks {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+
+  .check {
+    color: $red-indicator;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: 0.2s ease-in-out;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+
+    &.active {
+      color: $green-indicator;
+    }
+  }
+}
